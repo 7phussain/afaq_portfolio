@@ -1,0 +1,24 @@
+.heading1 {
+  font-size: 15px;
+  margin-top: 5vh;
+}
+.heading2 {
+  font-size: 14px;
+}
+.top {
+  min-height: 50vh;
+}
+@media only screen and (max-width: 480px) {
+  /* hide element on small screens */
+  .heading1 {
+    font-size: 15px;
+    margin-top: 5vh;
+  }
+  .heading2 {
+    font-size: 14px;
+    
+  }
+  .top {
+    min-height: 50vh;
+  }
+}

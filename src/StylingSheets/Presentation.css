@@ -1,0 +1,48 @@
+.bg-top {
+  min-height: 75vh;
+}
+
+.bottom {
+  margin-top: 1vh;
+}
+.bottom2 {
+  margin-top: -1vh;
+}
+.bottombtns {
+  margin-top: 1px;
+}
+.top {
+  min-height: 75vh;
+}
+
+@media only screen and (max-width: 480px) {
+  /* hide element on small screens */
+  .logoImg {
+    margin-top: 12vh;
+    height: 8vh;
+    width: 90vw;
+  }
+  .aniamtion_container {
+    display: none;
+  }
+  .logoImg2 {
+    height: 4vh;
+    width: 70vw;
+    margin-top: -18vh;
+  }
+  .bg-top {
+    min-height: 45vh;
+  }
+  .bottom {
+    margin-top: -40vh;
+  }
+  .bottom2 {
+    margin-top: -9vh;
+  }
+  .bottombtns {
+    margin: 12px;
+  }
+  .top {
+    min-height: 35vh;
+  }
+}
