@@ -1,0 +1,163 @@
+.tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #425472;
+  margin-bottom: 3vw;
+}
+
+.titleName {
+  margin-bottom: 3vw;
+  text-align: center;
+}
+.toolContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.space {
+  margin-top: 6vw;
+}
+
+.Left {
+  flex: 0.7;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.Right {
+  flex: 0.3;
+  margin-right: 2vw;
+}
+.tools_discription {
+  font-size: 17px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  width: 100vw;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.skillCOntainer {
+  height: 150px;
+  width: 120px;
+}
+
+.skillCOntainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.skillCOntainer:hover {
+  animation: bounce 1s ease-in-out;
+  animation: tilt 1s linear forwards;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.img {
+  border-radius: 10px;
+  height: 80px;
+  border-bottom: 1px solid gray;
+}
+
+.skillName {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.Experties {
+  font-size: 12px;
+
+  text-align: center;
+  padding-top: 4px;
+  font-family: var(--font);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.visible {
+  animation-play-state: running;
+}
+
+@media only screen and (max-width: 480px) {
+  /* hide element on small screens */
+  .toolContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .Right {
+    flex: 0.3;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+  }
+  .tools_discription {
+    font-size: 17px;
+    text-align: center;
+  }
+  .titleName {
+    margin-bottom: 3vw;
+    text-align: center;
+    font-size: 15px;
+  }
+  .skillCOntainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .container {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

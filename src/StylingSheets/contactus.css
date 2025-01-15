@@ -1,0 +1,13 @@
+.img-contact-us {
+  height: 90vh;
+  width: 50vw;
+  margin-left: '5%';
+  border-radius: '4%';
+}
+
+@media only screen and (max-width: 480px) {
+  /* hide element on small screens */
+  .img-contact-us {
+    display: none;
+  }
+}
